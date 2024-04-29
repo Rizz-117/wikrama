@@ -19,6 +19,18 @@ $username = $_SESSION['username'];
 </head>
 <body>
     <h2>Selamat datang, <?php echo $username; ?>!</h2>
+<form action="#" method="get">
+  <label for="input">Cari file:</label><br>
+  <input type="text" id="input" name="input"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<?php
+if(isset($_GET['input'])) {
+  $input = $_GET['input'];
+  echo "<p>File: $input! tidak dapat ditemukan</p>"; // Vulnerable code, reflects input directly to the page
+}
+?>
     <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
