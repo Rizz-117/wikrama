@@ -1,0 +1,29 @@
+1.	Hardening Linux
+-	Dijalankan di VM Masing Masing Komputer / Laptop Peserta. Dimulai dari tahapan Instalasi Sistem Operasi Linux Centos 7 (VMware / VirtualBox masing-masing) 
+-	Pada Kondisi Awal Peserta Harus dapat Membuktikan secara terbalik (Reverse) tentang Vulnerabilitynya
+
+-	Konfigurasi dan Pengujian Hardening Document Host Information (Linux machines) 
+https://www.hostinger.co.id/tutorial/cara-mengganti-hostname
+
+-	Konfigurasi dan Pengujian Hardening Hardisk Encription (Linux machines) 
+1. https://unix.stackexchange.com/questions/512967/centos7-full-disk-encryption
+ 2. https://www.cyberciti.biz/security/howto-linux-hard-disk-encryption-with-luks-cryptsetup-command/;m/ –reload
+
+-	Konfigurasi dan Pengujian Hardening Whitelisting Selinux (Linux machines) 
+Comant buat cek selinux berjalan atau tidak : 
+Sestatus
+Enforcing, yang artinya semua akses tanpa otorisasi akan ditolak. Dalam kondisi ini, SELinux sedang aktif. 
+Permissive, yang artinya SELinux membolehkan akses tanpa otorisasi, tetapi diikuti oleh peringatan.
+Disable, yang artinya SELinux dalam keadaan mati dan tidak akan memberi peringatan apa pun.
+
+-	Konfigurasi dan Pengujian Hardening CHROOT Shell (Linux machines) 
+https://www.tecmint.com/restrict-sftp-user-home-directories-using-chroot/
+
+-	Konfigurasi dan Pengujian Hardening Certificate Shell Login (Linux machines) 
+https://www.psychz.net/client/kb/en/how-to-install-ssl-certificate-on-centos-7.html
+
+-	Konfigurasi dan Pengujian Hardening Directory Listing (Linux machines) 
+https://hostadvice.com/how-to/web-hosting/centos/how-to-harden-the-apache-web-server-on-centos-7/
+
+-	Konfigurasi dan Pengujian Hardening Remote Command Exec (Linux machines)
+https://access.redhat.com/solutions/65822
