@@ -1,0 +1,21 @@
+# yum install epel-release
+# yum repolist
+# yum install yum-plugin-protectbase.noarch -y
+# yum install mod_evasive -y
+# ls -la /etc/httpd/conf.d/mod_evasive.conf
+# httpd -M | grep evasive
+# nano /etc/httpd/conf.d/mod_evasive.conf
+
+
+# mkdir /var/log/mod_evasive
+# chown -R apache:apache /var/log/mod_evasive
+
+# restart httpd
+
+# yum install -y perl
+# nano /usr/share/doc/mod_evasive- tab
+
+# print $SOCKET "GET /?$_ HTTP/1.0\r\nHost: 127.0.0.1\r\n\r\n";
+
+
+# perl /usr/share/doc/mod_evasive tab tab
